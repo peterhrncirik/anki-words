@@ -32,6 +32,7 @@ def translate_word(soup, type):
                 both_forms = _.split('\xa0pl.:')
                 for form in both_forms:
                     word['words'].append(form.strip())
+    
                 
     elif type == 'verb':
 

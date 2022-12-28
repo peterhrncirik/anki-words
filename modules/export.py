@@ -2,20 +2,17 @@ from os import startfile
 
 def export(d, type):
     print('Saving file...')
-    
+
     with open('word.txt', 'w') as file:
 
-        for words in d.get('words'):
-            
-            for word in words:
-                
-                if type == 'noun':
-                    file.write(word.strip())
-                    file.write('\n')
-                else:
-                    file.write(word)
-
-
+        for word in d.get('words'):
+        
+            if type == 'noun':
+                file.write(word)
+                file.write('\n')
+            else:
+                file.write(word)
+        
         file.write('\n')
         file.write('SENTENCES:')
         file.write('\n')
@@ -29,3 +26,4 @@ def export(d, type):
                     file.write('\n')       
     
     startfile('word.txt')
+    
