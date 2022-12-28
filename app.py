@@ -30,7 +30,7 @@ else:
 
 
 # Open images
-# images.open_images(' '.join(word_to_translate))
+images.open_images(' '.join(word_to_translate))
    
 # Export to txt     
-# export.export(translated_word, word_type)
+export.export(translated_word, word_type)
