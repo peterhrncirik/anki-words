@@ -7,8 +7,11 @@ Helps me creating cards faster.
 ### Usage
 
 `word` : word to translate or look up
+
 `-t` :  word type, verb/noun, `default = 'noun'`
+
 `eng` : translate from ENG to DE, `default = False`
+
 
 `py app.py word -type -eng`
 
