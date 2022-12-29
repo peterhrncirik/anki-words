@@ -22,3 +22,4 @@ Helps me creating cards faster.
 * [x] Add Selenium for sentences extraction
 * [ ] Some words/verbs output is not 100%
 * [ ] Automatically collect images?
+* [ ] Import notes directly from icloud notes
