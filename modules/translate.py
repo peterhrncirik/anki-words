@@ -39,10 +39,13 @@ def translate_word(soup, type):
         #FIXME: When it's verb, I need to split it somehow for sentences look up
         
         for w in track(table[0:1], description='Translating verbs....'):
+
             time.sleep(.3)
+
             word['words'].append(w.text.replace('\xa0', ''))
             all_forms = w.text.replace('\xa0', '').split()
             for form in all_forms:
+
                 word['verbs'].append(form.strip())
 
            
